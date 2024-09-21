@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document 4</title>
+    <style>
+        input[type=text]
+        {
+            border:3px dotted rgb(177, 7, 35);
+        }
+        input[type=password]
+        {
+            border:5px solid rgb(182, 53, 96);
+        }
+        ul>li{
+            color:rgb(12, 110, 78);
+            font-size: 50px;
+        }
+        p+p{
+            color:green;
+        }
+        a:hover{
+            color:rgb(90, 15, 90);}
+        li:nth-child(2){
+            color:rgb(119, 90, 15);
+        }
+        div:not(.class1){
+            border:3px dashed rgb(230, 97, 124)
+        }
+        .class4::before{
+            content: "SHIZA";
+            color:rgb(248, 11, 161)
+        }
+        .class6::after{
+        content:"shiza";
+        color:rgb(85, 85, 7);
+        }
+        p::first-letter{
+            color:rgb(11, 5, 94);
+            font-size: 100px;;
+        }
+        body{
+            background-color: plum;
+        }
+            </style>
+</head>
+<body>
+    <center><h2><u>Pseudo elements and classes</u></h2></center>
+    <p><font color=blue>Today we are going to introduce sam to advanced selectors, pseudo elements and pseudo classes. first lets talk about advanced selectors.</font></p>
+    <ol><font color="white">
+        <li>Attribute selectors</li>
+        <li>Child selectors</li>
+        <li>Sibling selectors</li></font>
+    </ol>
+ <!--Attribute selector-->
+ <input type="text" placeholder="Enter name"> <br><br>
+ <input type="password" placeholder="Enter Password"> 
+ <!--Child selectors-->
+  <ul>
+     <li>Home</li>
+     <li>School</li>
+  </ul>
+  <!--Sibling selector-->
+  <h1>Title</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+<!--PSEUDO classes-->
+     <!--Hover-->
+     <a href="#">Pinterest</a><!-- IF WE put our pointer it will be styled-->
+     <!--nth child-->
+     <ul>
+        <li>Folder 1</li>
+        <li>Folder 2</li>
+        <li>Folder 3</li>
+     </ul>
+     <!--not selector-->
+     <div class="class1">
+        Iam shiza
+     </div>
+     <div class="class2">
+        This is codingal.
+     </div>
+     <!--pseudo elements-->
+     <!--before-->
+     <div class="class4">
+        Before element
+     </div>
+     <!--after-->
+     <div class="class6">
+        After element
+     </div>
+     <!--first letter-->
+     <p>This is a paragraph</p>
+</body>
+</html>
